@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		582CFF4A2392B74C008F67CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF492392B74C008F67CE /* AppDelegate.swift */; };
+		582CFF4C2392B74C008F67CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF4B2392B74C008F67CE /* SceneDelegate.swift */; };
+		582CFF512392B74C008F67CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582CFF4F2392B74C008F67CE /* Main.storyboard */; };
+		582CFF532392B74F008F67CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582CFF522392B74F008F67CE /* Assets.xcassets */; };
+		582CFF562392B74F008F67CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582CFF542392B74F008F67CE /* LaunchScreen.storyboard */; };
+		582CFF612392B74F008F67CE /* ZenitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF602392B74F008F67CE /* ZenitTests.swift */; };
+		582CFF6C2392B74F008F67CE /* ZenitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF6B2392B74F008F67CE /* ZenitUITests.swift */; };
+		582CFF7A2392B8EF008F67CE /* ListOfPlayersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF792392B8EF008F67CE /* ListOfPlayersVC.swift */; };
+		58422717239D379D00DAB904 /* PlayerBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58422716239D379D00DAB904 /* PlayerBioViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		582CFF5D2392B74F008F67CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582CFF3E2392B74C008F67CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582CFF452392B74C008F67CE;
+			remoteInfo = Zenit;
+		};
+		582CFF682392B74F008F67CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 582CFF3E2392B74C008F67CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 582CFF452392B74C008F67CE;
+			remoteInfo = Zenit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		582CFF462392B74C008F67CE /* Zenit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		582CFF492392B74C008F67CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		582CFF4B2392B74C008F67CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		582CFF502392B74C008F67CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		582CFF522392B74F008F67CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		582CFF552392B74F008F67CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		582CFF572392B74F008F67CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582CFF5C2392B74F008F67CE /* ZenitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		582CFF602392B74F008F67CE /* ZenitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenitTests.swift; sourceTree = "<group>"; };
+		582CFF622392B74F008F67CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582CFF672392B74F008F67CE /* ZenitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		582CFF6B2392B74F008F67CE /* ZenitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenitUITests.swift; sourceTree = "<group>"; };
+		582CFF6D2392B74F008F67CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		582CFF792392B8EF008F67CE /* ListOfPlayersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListOfPlayersVC.swift; sourceTree = "<group>"; };
+		58422716239D379D00DAB904 /* PlayerBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBioViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		582CFF432392B74C008F67CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582CFF592392B74F008F67CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582CFF642392B74F008F67CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		582CFF3D2392B74C008F67CE = {
+			isa = PBXGroup;
+			children = (
+				582CFF482392B74C008F67CE /* Zenit */,
+				582CFF5F2392B74F008F67CE /* ZenitTests */,
+				582CFF6A2392B74F008F67CE /* ZenitUITests */,
+				582CFF472392B74C008F67CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		582CFF472392B74C008F67CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				582CFF462392B74C008F67CE /* Zenit.app */,
+				582CFF5C2392B74F008F67CE /* ZenitTests.xctest */,
+				582CFF672392B74F008F67CE /* ZenitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		582CFF482392B74C008F67CE /* Zenit */ = {
+			isa = PBXGroup;
+			children = (
+				582CFF492392B74C008F67CE /* AppDelegate.swift */,
+				582CFF4B2392B74C008F67CE /* SceneDelegate.swift */,
+				582CFF792392B8EF008F67CE /* ListOfPlayersVC.swift */,
+				582CFF4F2392B74C008F67CE /* Main.storyboard */,
+				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
+				582CFF542392B74F008F67CE /* LaunchScreen.storyboard */,
+				582CFF522392B74F008F67CE /* Assets.xcassets */,
+				582CFF572392B74F008F67CE /* Info.plist */,
+			);
+			path = Zenit;
+			sourceTree = "<group>";
+		};
+		582CFF5F2392B74F008F67CE /* ZenitTests */ = {
+			isa = PBXGroup;
+			children = (
+				582CFF602392B74F008F67CE /* ZenitTests.swift */,
+				582CFF622392B74F008F67CE /* Info.plist */,
+			);
+			path = ZenitTests;
+			sourceTree = "<group>";
+		};
+		582CFF6A2392B74F008F67CE /* ZenitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				582CFF6B2392B74F008F67CE /* ZenitUITests.swift */,
+				582CFF6D2392B74F008F67CE /* Info.plist */,
+			);
+			path = ZenitUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		582CFF452392B74C008F67CE /* Zenit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582CFF702392B74F008F67CE /* Build configuration list for PBXNativeTarget "Zenit" */;
+			buildPhases = (
+				582CFF422392B74C008F67CE /* Sources */,
+				582CFF432392B74C008F67CE /* Frameworks */,
+				582CFF442392B74C008F67CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Zenit;
+			productName = Zenit;
+			productReference = 582CFF462392B74C008F67CE /* Zenit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		582CFF5B2392B74F008F67CE /* ZenitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582CFF732392B74F008F67CE /* Build configuration list for PBXNativeTarget "ZenitTests" */;
+			buildPhases = (
+				582CFF582392B74F008F67CE /* Sources */,
+				582CFF592392B74F008F67CE /* Frameworks */,
+				582CFF5A2392B74F008F67CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582CFF5E2392B74F008F67CE /* PBXTargetDependency */,
+			);
+			name = ZenitTests;
+			productName = ZenitTests;
+			productReference = 582CFF5C2392B74F008F67CE /* ZenitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		582CFF662392B74F008F67CE /* ZenitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 582CFF762392B74F008F67CE /* Build configuration list for PBXNativeTarget "ZenitUITests" */;
+			buildPhases = (
+				582CFF632392B74F008F67CE /* Sources */,
+				582CFF642392B74F008F67CE /* Frameworks */,
+				582CFF652392B74F008F67CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				582CFF692392B74F008F67CE /* PBXTargetDependency */,
+			);
+			name = ZenitUITests;
+			productName = ZenitUITests;
+			productReference = 582CFF672392B74F008F67CE /* ZenitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		582CFF3E2392B74C008F67CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Eugene Vasilyev";
+				TargetAttributes = {
+					582CFF452392B74C008F67CE = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					582CFF5B2392B74F008F67CE = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 582CFF452392B74C008F67CE;
+					};
+					582CFF662392B74F008F67CE = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 582CFF452392B74C008F67CE;
+					};
+				};
+			};
+			buildConfigurationList = 582CFF412392B74C008F67CE /* Build configuration list for PBXProject "Zenit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 582CFF3D2392B74C008F67CE;
+			productRefGroup = 582CFF472392B74C008F67CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				582CFF452392B74C008F67CE /* Zenit */,
+				582CFF5B2392B74F008F67CE /* ZenitTests */,
+				582CFF662392B74F008F67CE /* ZenitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		582CFF442392B74C008F67CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582CFF562392B74F008F67CE /* LaunchScreen.storyboard in Resources */,
+				582CFF532392B74F008F67CE /* Assets.xcassets in Resources */,
+				582CFF512392B74C008F67CE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582CFF5A2392B74F008F67CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582CFF652392B74F008F67CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		582CFF422392B74C008F67CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582CFF4A2392B74C008F67CE /* AppDelegate.swift in Sources */,
+				582CFF7A2392B8EF008F67CE /* ListOfPlayersVC.swift in Sources */,
+				58422717239D379D00DAB904 /* PlayerBioViewController.swift in Sources */,
+				582CFF4C2392B74C008F67CE /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582CFF582392B74F008F67CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582CFF612392B74F008F67CE /* ZenitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		582CFF632392B74F008F67CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				582CFF6C2392B74F008F67CE /* ZenitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		582CFF5E2392B74F008F67CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582CFF452392B74C008F67CE /* Zenit */;
+			targetProxy = 582CFF5D2392B74F008F67CE /* PBXContainerItemProxy */;
+		};
+		582CFF692392B74F008F67CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 582CFF452392B74C008F67CE /* Zenit */;
+			targetProxy = 582CFF682392B74F008F67CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		582CFF4F2392B74C008F67CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582CFF502392B74C008F67CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		582CFF542392B74F008F67CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				582CFF552392B74F008F67CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		582CFF6E2392B74F008F67CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		582CFF6F2392B74F008F67CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		582CFF712392B74F008F67CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UN5X22S53;
+				INFOPLIST_FILE = Zenit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugene.vas-yandex.Zenit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		582CFF722392B74F008F67CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UN5X22S53;
+				INFOPLIST_FILE = Zenit/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugene.vas-yandex.Zenit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		582CFF742392B74F008F67CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UN5X22S53;
+				INFOPLIST_FILE = ZenitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugene.vas-yandex.ZenitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zenit.app/Zenit";
+			};
+			name = Debug;
+		};
+		582CFF752392B74F008F67CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UN5X22S53;
+				INFOPLIST_FILE = ZenitTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugene.vas-yandex.ZenitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Zenit.app/Zenit";
+			};
+			name = Release;
+		};
+		582CFF772392B74F008F67CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UN5X22S53;
+				INFOPLIST_FILE = ZenitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugene.vas-yandex.ZenitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zenit;
+			};
+			name = Debug;
+		};
+		582CFF782392B74F008F67CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9UN5X22S53;
+				INFOPLIST_FILE = ZenitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.eugene.vas-yandex.ZenitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Zenit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		582CFF412392B74C008F67CE /* Build configuration list for PBXProject "Zenit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582CFF6E2392B74F008F67CE /* Debug */,
+				582CFF6F2392B74F008F67CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582CFF702392B74F008F67CE /* Build configuration list for PBXNativeTarget "Zenit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582CFF712392B74F008F67CE /* Debug */,
+				582CFF722392B74F008F67CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582CFF732392B74F008F67CE /* Build configuration list for PBXNativeTarget "ZenitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582CFF742392B74F008F67CE /* Debug */,
+				582CFF752392B74F008F67CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		582CFF762392B74F008F67CE /* Build configuration list for PBXNativeTarget "ZenitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				582CFF772392B74F008F67CE /* Debug */,
+				582CFF782392B74F008F67CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 582CFF3E2392B74C008F67CE /* Project object */;
+}
