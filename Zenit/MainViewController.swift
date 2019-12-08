@@ -8,17 +8,12 @@
 
 import UIKit
 
-class ListOfPlayersVC: UITableViewController {
+class MainViewController: UITableViewController {
 
     
-    let listOfPlayers = [ "Андрей Лунёв", "Александр Васютин", "Михаил Кержаков",
-                          "Игорь Смольников", "Ярослав Ракицкий", "Вячеслав Караваев",
-                          "Эмануэль Маммана", "Бранислав Иванович", "Дуглас Сантос", "Йордан Осорио",
-                          "Вильмар Барриос", "Малком", "Юрий Жирков", "Магомед Оздоев",
-                          "Леон Мусаев", "Алексей Сутормин", "Далер Кузяев", "Александр Ерохин",
-                          "Олег Шатов", "Роберт Мак", "Матиас Кранневитер", "Себастьян Дриусси",
-                          "Сердар Азмун", "Артём Дзюба"
-    ]
+    let players = Player.getPlayers()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,7 +23,7 @@ class ListOfPlayersVC: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return listOfPlayers.count
+        return players.count
     }
 
     
@@ -37,8 +32,10 @@ class ListOfPlayersVC: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
 
         // присвоили лэйблу ячейки конкретный элемент массива, который берём по индексу текущей строки
-        cell.nameLabel.text = listOfPlayers[indexPath.row]
-        cell.imageOfPlayer.image = UIImage(named: listOfPlayers[indexPath.row])
+        cell.nameLabel.text = players[indexPath.row].name
+        cell.positionLabel.text = players[indexPath.row].position
+        cell.countryLabel.text = players[indexPath.row].country
+        cell.imageOfPlayer.image = UIImage(named: players[indexPath.row].image)
         cell.imageOfPlayer.layer.cornerRadius = cell.imageOfPlayer.frame.size.height / 3
         cell.imageOfPlayer.clipsToBounds = true
 
@@ -46,10 +43,6 @@ class ListOfPlayersVC: UITableViewController {
         return cell
     }
 
-    // MARK: - Table View Delegate
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-         return 85
-    }
 
     /*
     // MARK: - Navigation

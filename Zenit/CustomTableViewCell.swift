@@ -13,5 +13,7 @@ class CustomTableViewCell: UITableViewCell {
     @IBOutlet weak var imageOfPlayer: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var positionLabel: UILabel!
-    @IBOutlet weak var ageLabel: UILabel!
+    @IBOutlet weak var countryLabel: UILabel!
+    
+    
 }

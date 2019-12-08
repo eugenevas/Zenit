@@ -10,7 +10,7 @@
         <!--Zenit Players-->
         <scene sceneID="lyb-ya-CwX">
             <objects>
-                <tableViewController id="hci-Kq-KDa" customClass="ListOfPlayersVC" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hci-Kq-KDa" customClass="MainViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kuh-8Q-Lue">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,7 +31,7 @@
                                                 <constraint firstAttribute="width" constant="65" id="tdq-dC-RDj"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name, country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJA-oO-OPR">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJA-oO-OPR">
                                             <rect key="frame" x="95" y="10" width="310" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="9be-bp-P1S"/>
@@ -40,7 +40,7 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-34-D4z">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-34-D4z" userLabel="Country Label">
                                             <rect key="frame" x="95" y="54" width="310" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="OYA-zP-rVg"/>
@@ -75,7 +75,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="ageLabel" destination="Phi-34-D4z" id="DWj-o5-dHO"/>
+                                    <outlet property="countryLabel" destination="Phi-34-D4z" id="iuY-9J-Jbb"/>
                                     <outlet property="imageOfPlayer" destination="e1e-DX-qdV" id="KrW-eI-DdZ"/>
                                     <outlet property="nameLabel" destination="kJA-oO-OPR" id="AhE-Qj-r36"/>
                                     <outlet property="positionLabel" destination="M3C-rD-6ed" id="cVc-Y5-BxQ"/>
