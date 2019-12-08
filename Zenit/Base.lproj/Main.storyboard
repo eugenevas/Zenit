@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--List Of PlayersVC-->
+        <!--Zenit Players-->
         <scene sceneID="lyb-ya-CwX">
             <objects>
                 <tableViewController id="hci-Kq-KDa" customClass="ListOfPlayersVC" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                             <outlet property="delegate" destination="hci-Kq-KDa" id="Yyj-rP-eJH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="d5M-Cq-g4S"/>
+                    <navigationItem key="navigationItem" title="Zenit Players" id="d5M-Cq-g4S"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT1-zB-cOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,6 +60,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBX-Ks-SQ2">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
