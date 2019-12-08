@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Zenit Players-->
+        <!--Игроки Зенита-->
         <scene sceneID="lyb-ya-CwX">
             <objects>
                 <tableViewController id="hci-Kq-KDa" customClass="MainViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,15 +17,15 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <color key="sectionIndexBackgroundColor" red="0.29188048840000003" green="0.64760506149999997" blue="0.96835285429999995" alpha="0.9990234375" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="85" id="e5N-9O-diu" customClass="CustomTableViewCell" customModule="Zenit" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="85"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="95" id="e5N-9O-diu" customClass="CustomTableViewCell" customModule="Zenit" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="95"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e5N-9O-diu" id="46a-ZU-kVh">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="95"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1e-DX-qdV">
-                                            <rect key="frame" x="15" y="5" width="65" height="75"/>
+                                            <rect key="frame" x="15" y="10" width="65" height="75"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="75" id="Gwu-bb-fp1"/>
                                                 <constraint firstAttribute="width" constant="65" id="tdq-dC-RDj"/>
@@ -41,7 +41,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phi-34-D4z" userLabel="Country Label">
-                                            <rect key="frame" x="95" y="54" width="310" height="21"/>
+                                            <rect key="frame" x="95" y="54" width="310" height="31"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="OYA-zP-rVg"/>
                                             </constraints>
@@ -79,6 +79,7 @@
                                     <outlet property="imageOfPlayer" destination="e1e-DX-qdV" id="KrW-eI-DdZ"/>
                                     <outlet property="nameLabel" destination="kJA-oO-OPR" id="AhE-Qj-r36"/>
                                     <outlet property="positionLabel" destination="M3C-rD-6ed" id="cVc-Y5-BxQ"/>
+                                    <segue destination="Cv4-gX-06Y" kind="show" identifier="ShowDetail" id="vm8-SA-GbN"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -87,26 +88,73 @@
                             <outlet property="delegate" destination="hci-Kq-KDa" id="Yyj-rP-eJH"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Zenit Players" id="d5M-Cq-g4S"/>
+                    <navigationItem key="navigationItem" title="Игроки Зенита" id="d5M-Cq-g4S"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT1-zB-cOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1811.594202898551" y="114.50892857142857"/>
         </scene>
-        <!--View Controller-->
+        <!--Об игроке-->
         <scene sceneID="E9L-YL-q0Z">
             <objects>
-                <viewController id="Cv4-gX-06Y" sceneMemberID="viewController">
+                <viewController id="Cv4-gX-06Y" customClass="PlayerBioViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tba-lw-LJE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0S-rA-aZ5">
+                                <rect key="frame" x="0.0" y="88" width="414" height="341"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="JIR-YR-nBg"/>
+                                    <constraint firstAttribute="height" constant="341" id="gfF-jx-XjE"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-KE-gCi">
+                                <rect key="frame" x="20" y="476" width="374" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="dH1-JF-I3r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-wa-M1l">
+                                <rect key="frame" x="20" y="515" width="374" height="335"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="N2E-4h-SCb"/>
+                                    <constraint firstAttribute="height" constant="335" id="NDV-TF-ffc"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="z7k-KE-gCi" firstAttribute="centerX" secondItem="a0S-rA-aZ5" secondAttribute="centerX" id="3kM-U9-75M"/>
+                            <constraint firstItem="a0S-rA-aZ5" firstAttribute="leading" secondItem="dOX-U5-8sC" secondAttribute="leading" id="9s9-ab-vSW"/>
+                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="z7k-KE-gCi" secondAttribute="bottom" constant="8" id="AOk-Fy-jTr"/>
+                            <constraint firstItem="z7k-KE-gCi" firstAttribute="leading" secondItem="uOz-wa-M1l" secondAttribute="leading" id="FNY-eT-s8L"/>
+                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="z7k-KE-gCi" secondAttribute="bottom" constant="8" id="JdJ-cK-mzk"/>
+                            <constraint firstItem="a0S-rA-aZ5" firstAttribute="trailing" secondItem="dOX-U5-8sC" secondAttribute="trailing" id="Sdh-k3-hod"/>
+                            <constraint firstItem="z7k-KE-gCi" firstAttribute="top" secondItem="a0S-rA-aZ5" secondAttribute="bottom" constant="47" id="d1L-9x-mga"/>
+                            <constraint firstItem="dOX-U5-8sC" firstAttribute="bottom" secondItem="uOz-wa-M1l" secondAttribute="bottom" constant="12" id="r4E-cD-qKm"/>
+                            <constraint firstItem="a0S-rA-aZ5" firstAttribute="top" secondItem="dOX-U5-8sC" secondAttribute="top" id="uTU-ph-GYb"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dOX-U5-8sC"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Об игроке" id="adx-RE-Ase"/>
+                    <connections>
+                        <outlet property="bio" destination="uOz-wa-M1l" id="eWQ-JC-5Iz"/>
+                        <outlet property="image" destination="a0S-rA-aZ5" id="tz2-gW-rQx"/>
+                        <outlet property="name" destination="z7k-KE-gCi" id="tTz-jY-go1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2e-K7-ob8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2635" y="115"/>
+            <point key="canvasLocation" x="2634.7826086956525" y="114.50892857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LzR-Zf-Vch">

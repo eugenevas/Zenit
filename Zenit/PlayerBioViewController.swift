@@ -9,22 +9,23 @@
 import UIKit
 
 class PlayerBioViewController: UIViewController {
-
+    
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var bio: UITextView!
+    
+    
+    var nameOfPlayer = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        image.image = UIImage(named: nameOfPlayer)
+        name.text = nameOfPlayer
+        bio.text = "Here will be a correct text soon"
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
+    
 }

@@ -54,4 +54,14 @@ class MainViewController: UITableViewController {
     }
     */
 
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowDetail" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {                // assigning index to selected row "indexPathForSelectedRow"
+                let playersBioViewController = segue.destination as! PlayerBioViewController  // create of class intance "playersBioViewController"
+                playersBioViewController.nameOfPlayer = players[indexPath.row].name     // access to property "nameOfPlayer" of "playersBioViewController" class
+            }
+        }
+    }
 }
