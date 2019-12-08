@@ -33,13 +33,14 @@ class ListOfPlayersVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        // приведение объекта cell к классу ячейки CustomTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! CustomTableViewCell
 
         // присвоили лэйблу ячейки конкретный элемент массива, который берём по индексу текущей строки
-        cell.textLabel?.text = listOfPlayers[indexPath.row]
-        cell.imageView?.image = UIImage(named: listOfPlayers[indexPath.row])
-//        cell.imageView?.layer.cornerRadius = cell.frame.size.height / 2
-//        cell.imageView?.clipsToBounds = true
+        cell.nameLabel.text = listOfPlayers[indexPath.row]
+        cell.imageOfPlayer.image = UIImage(named: listOfPlayers[indexPath.row])
+        cell.imageOfPlayer.layer.cornerRadius = cell.imageOfPlayer.frame.size.height / 3
+        cell.imageOfPlayer.clipsToBounds = true
 
         // возвращаем cell, т.к. cell - объект класса UITableViewCell
         return cell
@@ -47,7 +48,7 @@ class ListOfPlayersVC: UITableViewController {
 
     // MARK: - Table View Delegate
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-         return 75
+         return 85
     }
 
     /*
