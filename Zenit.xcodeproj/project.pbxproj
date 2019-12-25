@@ -107,10 +107,10 @@
 			children = (
 				582CFF492392B74C008F67CE /* AppDelegate.swift */,
 				582CFF4B2392B74C008F67CE /* SceneDelegate.swift */,
-				582CFF792392B8EF008F67CE /* MainViewController.swift */,
-				58422718239D584400DAB904 /* CustomTableViewCell.swift */,
-				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
 				5842271A239D606200DAB904 /* PlayerModel.swift */,
+				58422718239D584400DAB904 /* CustomTableViewCell.swift */,
+				582CFF792392B8EF008F67CE /* MainViewController.swift */,
+				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
 				582CFF4F2392B74C008F67CE /* Main.storyboard */,
 				582CFF542392B74F008F67CE /* LaunchScreen.storyboard */,
 				582CFF522392B74F008F67CE /* Assets.xcassets */,
