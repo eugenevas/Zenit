@@ -15,7 +15,7 @@ class PlayerBioViewController: UIViewController {
     @IBOutlet weak var bio: UITextView!
     
     
-    var nameOfPlayer = ""
+    var nameOfPlayer = "раз два"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +25,7 @@ class PlayerBioViewController: UIViewController {
         bio.text = "Here will be a correct text soon"
     }
     
-
+    
     
     
 }
