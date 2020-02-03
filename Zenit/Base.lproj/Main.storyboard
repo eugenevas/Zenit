@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="UN5-MJ-2eO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QQK-j7-03a">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -7,6 +7,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Матчи-->
+        <scene sceneID="u8q-av-Hbo">
+            <objects>
+                <viewController id="dzg-dw-umL" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KDD-vf-T3y">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="A7C-QT-ozL"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Матчи" image="matches" id="E7x-ws-UDl"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQE-cn-nMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="1000"/>
+        </scene>
+        <!--Главная-->
+        <scene sceneID="EQM-U2-L5M">
+            <objects>
+                <viewController id="OdG-gt-TSE" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dpd-hU-ob6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.86531865600000002" green="0.59791672230000004" blue="0.41691181059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="kIW-Rc-jwN"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Главная" image="main" id="aAN-JK-WAw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aki-0P-f0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="1000"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pBX-l5-xpR">
+            <objects>
+                <tabBarController id="QQK-j7-03a" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="G3Y-WK-8pZ"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="vBu-Gu-mNN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="OdG-gt-TSE" kind="relationship" relationship="viewControllers" id="qw0-5M-Je2"/>
+                        <segue destination="dzg-dw-umL" kind="relationship" relationship="viewControllers" id="Y7b-g4-oAj"/>
+                        <segue destination="hci-Kq-KDa" kind="relationship" relationship="viewControllers" id="LJU-UP-hke"/>
+                        <segue destination="b8L-fB-me4" kind="relationship" relationship="viewControllers" id="tTH-NH-jjv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSn-aF-0jY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="783" y="275"/>
+        </scene>
         <!--Игроки Зенита-->
         <scene sceneID="lyb-ya-CwX">
             <objects>
@@ -88,29 +141,46 @@
                             <outlet property="delegate" destination="hci-Kq-KDa" id="Yyj-rP-eJH"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Игроки" image="team" id="fWT-Mg-deL"/>
                     <navigationItem key="navigationItem" title="Игроки Зенита" id="d5M-Cq-g4S"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT1-zB-cOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811.594202898551" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1622" y="1000"/>
+        </scene>
+        <!--Таблица-->
+        <scene sceneID="9yW-wG-5eR">
+            <objects>
+                <viewController id="b8L-fB-me4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TIq-Gu-KdE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="6R8-vP-1d8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Таблица" image="table" id="XV8-WT-t2x"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fhd-J0-CT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2488" y="1000"/>
         </scene>
         <!--Об игроке-->
         <scene sceneID="E9L-YL-q0Z">
             <objects>
                 <viewController id="Cv4-gX-06Y" customClass="PlayerBioViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tba-lw-LJE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0S-rA-aZ5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="341"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JIR-YR-nBg"/>
                                     <constraint firstAttribute="height" constant="341" id="gfF-jx-XjE"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-KE-gCi">
-                                <rect key="frame" x="20" y="476" width="374" height="31"/>
+                                <rect key="frame" x="20" y="388" width="374" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="dH1-JF-I3r"/>
                                 </constraints>
@@ -119,7 +189,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-wa-M1l">
-                                <rect key="frame" x="20" y="515" width="374" height="335"/>
+                                <rect key="frame" x="20" y="461" width="374" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="N2E-4h-SCb"/>
@@ -154,28 +224,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2e-K7-ob8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2634.7826086956525" y="114.50892857142857"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="LzR-Zf-Vch">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UN5-MJ-2eO" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zBX-Ks-SQ2">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="25"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="hci-Kq-KDa" kind="relationship" relationship="rootViewController" id="a4B-JS-OlD"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hAI-ND-0aP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="901.44927536231887" y="114.50892857142857"/>
+            <point key="canvasLocation" x="1622" y="1744"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="main" width="24" height="24"/>
+        <image name="matches" width="24" height="24"/>
+        <image name="table" width="22" height="22"/>
+        <image name="team" width="30" height="19"/>
+    </resources>
 </document>
