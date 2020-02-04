@@ -88,6 +88,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5817A14A23E9ACC300C9121D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5842271A239D606200DAB904 /* PlayerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5817A14B23E9ACD800C9121D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
+				5817A14323E9889C00C9121D /* MainPageViewController.swift */,
+				5817A14523E988C400C9121D /* MatchesViewController.swift */,
+				582CFF792392B8EF008F67CE /* TeamViewController.swift */,
+				5817A14723E988FF00C9121D /* StandingsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5817A14C23E9AD1D00C9121D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				58422718239D584400DAB904 /* CustomTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5817A14D23E9AD2B00C9121D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				582CFF4F2392B74C008F67CE /* Main.storyboard */,
+				582CFF542392B74F008F67CE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		582CFF3D2392B74C008F67CE = {
 			isa = PBXGroup;
 			children = (
@@ -113,15 +150,10 @@
 			children = (
 				582CFF492392B74C008F67CE /* AppDelegate.swift */,
 				582CFF4B2392B74C008F67CE /* SceneDelegate.swift */,
-				5842271A239D606200DAB904 /* PlayerModel.swift */,
-				58422718239D584400DAB904 /* CustomTableViewCell.swift */,
-				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
-				5817A14323E9889C00C9121D /* MainPageViewController.swift */,
-				5817A14523E988C400C9121D /* MatchesViewController.swift */,
-				582CFF792392B8EF008F67CE /* TeamViewController.swift */,
-				5817A14723E988FF00C9121D /* StandingsViewController.swift */,
-				582CFF4F2392B74C008F67CE /* Main.storyboard */,
-				582CFF542392B74F008F67CE /* LaunchScreen.storyboard */,
+				5817A14A23E9ACC300C9121D /* Model */,
+				5817A14C23E9AD1D00C9121D /* View */,
+				5817A14B23E9ACD800C9121D /* Controller */,
+				5817A14D23E9AD2B00C9121D /* Storyboards */,
 				582CFF522392B74F008F67CE /* Assets.xcassets */,
 				582CFF572392B74F008F67CE /* Info.plist */,
 			);
