@@ -8,16 +8,14 @@
 
 import UIKit
 
-class MainViewController: UITableViewController {
+class TeamViewController: UITableViewController {
 
-    
     let players = Player.getPlayers()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    
+        
+      //  self.tableView.contentInset = UIEdgeInsets(top: 100, left: 0, bottom: 0, right: 0)
     }
 
     // MARK: - Table view data source
@@ -25,7 +23,6 @@ class MainViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // приведение объекта cell к классу ячейки CustomTableViewCell
@@ -57,8 +54,6 @@ class MainViewController: UITableViewController {
     }
     */
 
-    
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {
             if let indexPath = self.tableView.indexPathForSelectedRow {                // assigning index to selected row "indexPathForSelectedRow"

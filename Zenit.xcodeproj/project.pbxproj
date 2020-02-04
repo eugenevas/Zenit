@@ -14,7 +14,7 @@
 		582CFF562392B74F008F67CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582CFF542392B74F008F67CE /* LaunchScreen.storyboard */; };
 		582CFF612392B74F008F67CE /* ZenitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF602392B74F008F67CE /* ZenitTests.swift */; };
 		582CFF6C2392B74F008F67CE /* ZenitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF6B2392B74F008F67CE /* ZenitUITests.swift */; };
-		582CFF7A2392B8EF008F67CE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF792392B8EF008F67CE /* MainViewController.swift */; };
+		582CFF7A2392B8EF008F67CE /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF792392B8EF008F67CE /* TeamViewController.swift */; };
 		58422717239D379D00DAB904 /* PlayerBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58422716239D379D00DAB904 /* PlayerBioViewController.swift */; };
 		58422719239D584400DAB904 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58422718239D584400DAB904 /* CustomTableViewCell.swift */; };
 		5842271B239D606200DAB904 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842271A239D606200DAB904 /* PlayerModel.swift */; };
@@ -51,7 +51,7 @@
 		582CFF672392B74F008F67CE /* ZenitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZenitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		582CFF6B2392B74F008F67CE /* ZenitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZenitUITests.swift; sourceTree = "<group>"; };
 		582CFF6D2392B74F008F67CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		582CFF792392B8EF008F67CE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		582CFF792392B8EF008F67CE /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		58422716239D379D00DAB904 /* PlayerBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBioViewController.swift; sourceTree = "<group>"; };
 		58422718239D584400DAB904 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		5842271A239D606200DAB904 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
@@ -107,10 +107,10 @@
 			children = (
 				582CFF492392B74C008F67CE /* AppDelegate.swift */,
 				582CFF4B2392B74C008F67CE /* SceneDelegate.swift */,
-				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
 				5842271A239D606200DAB904 /* PlayerModel.swift */,
 				58422718239D584400DAB904 /* CustomTableViewCell.swift */,
-				582CFF792392B8EF008F67CE /* MainViewController.swift */,
+				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
+				582CFF792392B8EF008F67CE /* TeamViewController.swift */,
 				582CFF4F2392B74C008F67CE /* Main.storyboard */,
 				582CFF542392B74F008F67CE /* LaunchScreen.storyboard */,
 				582CFF522392B74F008F67CE /* Assets.xcassets */,
@@ -271,7 +271,7 @@
 				5842271B239D606200DAB904 /* PlayerModel.swift in Sources */,
 				582CFF4A2392B74C008F67CE /* AppDelegate.swift in Sources */,
 				58422719239D584400DAB904 /* CustomTableViewCell.swift in Sources */,
-				582CFF7A2392B8EF008F67CE /* MainViewController.swift in Sources */,
+				582CFF7A2392B8EF008F67CE /* TeamViewController.swift in Sources */,
 				58422717239D379D00DAB904 /* PlayerBioViewController.swift in Sources */,
 				582CFF4C2392B74C008F67CE /* SceneDelegate.swift in Sources */,
 			);

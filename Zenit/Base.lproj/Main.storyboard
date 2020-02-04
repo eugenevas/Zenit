@@ -14,7 +14,7 @@
                     <view key="view" contentMode="scaleToFill" id="KDD-vf-T3y">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.6298828125" green="0.5697021484375" blue="0.8941650390625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="A7C-QT-ozL"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Матчи" image="matches" id="E7x-ws-UDl"/>
@@ -30,7 +30,7 @@
                     <view key="view" contentMode="scaleToFill" id="Dpd-hU-ob6">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.86531865600000002" green="0.59791672230000004" blue="0.41691181059999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.28899896144866943" green="0.64022982120513916" blue="0.96251583099365234" alpha="0.9997711181640625" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="kIW-Rc-jwN"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Главная" image="main" id="aAN-JK-WAw"/>
@@ -52,8 +52,8 @@
                     <connections>
                         <segue destination="OdG-gt-TSE" kind="relationship" relationship="viewControllers" id="qw0-5M-Je2"/>
                         <segue destination="dzg-dw-umL" kind="relationship" relationship="viewControllers" id="Y7b-g4-oAj"/>
-                        <segue destination="hci-Kq-KDa" kind="relationship" relationship="viewControllers" id="LJU-UP-hke"/>
-                        <segue destination="b8L-fB-me4" kind="relationship" relationship="viewControllers" id="tTH-NH-jjv"/>
+                        <segue destination="sBp-bE-941" kind="relationship" relationship="viewControllers" id="9ss-Qi-QgI"/>
+                        <segue destination="b8L-fB-me4" kind="relationship" relationship="viewControllers" id="CnJ-b4-7C5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSn-aF-0jY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -63,7 +63,7 @@
         <!--Игроки Зенита-->
         <scene sceneID="lyb-ya-CwX">
             <objects>
-                <tableViewController id="hci-Kq-KDa" customClass="MainViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hci-Kq-KDa" customClass="TeamViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="kuh-8Q-Lue">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -146,6 +146,24 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT1-zB-cOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1622" y="1672"/>
+        </scene>
+        <!--Игроки Зенита-->
+        <scene sceneID="IkS-Ku-VtY">
+            <objects>
+                <navigationController id="sBp-bE-941" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Игроки Зенита" image="team" id="MHt-1h-iFb"/>
+                    <navigationItem key="navigationItem" id="ATT-RD-GLx"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2aY-1D-kEE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="hci-Kq-KDa" kind="relationship" relationship="rootViewController" id="vMd-E4-6mW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XUV-xG-4A8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="1622" y="1000"/>
         </scene>
         <!--Таблица-->
@@ -155,32 +173,31 @@
                     <view key="view" contentMode="scaleToFill" id="TIq-Gu-KdE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6R8-vP-1d8"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Таблица" image="table" id="XV8-WT-t2x"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fhd-J0-CT6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2488" y="1000"/>
+            <point key="canvasLocation" x="2461" y="1000"/>
         </scene>
         <!--Об игроке-->
         <scene sceneID="E9L-YL-q0Z">
             <objects>
                 <viewController id="Cv4-gX-06Y" customClass="PlayerBioViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tba-lw-LJE">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0S-rA-aZ5">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="341"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="287"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JIR-YR-nBg"/>
-                                    <constraint firstAttribute="height" constant="341" id="gfF-jx-XjE"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-KE-gCi">
-                                <rect key="frame" x="20" y="388" width="374" height="65"/>
+                                <rect key="frame" x="20" y="422" width="374" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="dH1-JF-I3r"/>
                                 </constraints>
@@ -189,7 +206,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-wa-M1l">
-                                <rect key="frame" x="20" y="461" width="374" height="335"/>
+                                <rect key="frame" x="20" y="466" width="374" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="N2E-4h-SCb"/>
@@ -224,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2e-K7-ob8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1622" y="1744"/>
+            <point key="canvasLocation" x="1622" y="2352"/>
         </scene>
     </scenes>
     <resources>
