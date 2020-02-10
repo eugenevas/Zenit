@@ -15,15 +15,14 @@ class MatchesViewController: UIViewController {
     @IBOutlet weak var matchesActivityIndicator: UIActivityIndicatorView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        matchesActivityIndicator.isHidden = true
-        matchesActivityIndicator.hidesWhenStopped = true
-        
-        let urlMatches = URL(string: "https://fc-zenit.ru/zenit/calendar/")
-        let urlRequestMatches = URLRequest(url: urlMatches!)
-        
-        mathesWebView.load(urlRequestMatches)
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        matchesActivityIndicator.isHidden = true
+//        matchesActivityIndicator.hidesWhenStopped = true
+//        
+//        let urlMatches = URL(string: "https://fc-zenit.ru/zenit/calendar/")
+//        let urlRequestMatches = URLRequest(url: urlMatches!)
+//        
+//        mathesWebView.load(urlRequestMatches)
 }
 
-}

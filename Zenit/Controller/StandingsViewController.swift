@@ -15,17 +15,17 @@ class StandingsViewController: UIViewController {
     @IBOutlet weak var standingsActivityIndicator: UIActivityIndicatorView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        standingsActivityIndicator.isHidden = true
-        standingsActivityIndicator.hidesWhenStopped = true
-        
-        let urlStandings = URL(string: "https://fc-zenit.ru/zenit/tables/")
-        let urlRequestStandings = URLRequest(url: urlStandings!)
-        
-        standingsWebView.load(urlRequestStandings)
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        standingsActivityIndicator.isHidden = true
+//        standingsActivityIndicator.hidesWhenStopped = true
+//        
+//        let urlStandings = URL(string: "https://fc-zenit.ru/zenit/tables/")
+//        let urlRequestStandings = URLRequest(url: urlStandings!)
+//        
+//        standingsWebView.load(urlRequestStandings)
+//    }
     
 
     

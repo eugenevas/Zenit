@@ -15,17 +15,14 @@ class PlayerBioViewController: UIViewController {
     @IBOutlet weak var bio: UITextView!
     
     
-    var nameOfPlayer = "раз два"
+    var nameOfPlayer = "Name"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        image.image = UIImage(named: nameOfPlayer)
+       image.image = UIImage(named: nameOfPlayer)
         name.text = nameOfPlayer
         bio.text = "Here will be a correct text soon"
     }
-    
-    
-    
     
 }

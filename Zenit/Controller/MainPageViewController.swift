@@ -16,16 +16,16 @@ class MainPageViewController: UIViewController {
     @IBOutlet weak var mainPageActivityIndicator: UIActivityIndicatorView!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        mainPageActivityIndicator.isHidden = true
-        mainPageActivityIndicator.hidesWhenStopped = true
-       
-        let urlMainPage = URL(string: "https://fc-zenit.ru")
-        let urlRequestMainPage = URLRequest(url: urlMainPage!)
-        
-        mainPageWebView.load(urlRequestMainPage)
-    }
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//        mainPageActivityIndicator.isHidden = true
+//        mainPageActivityIndicator.hidesWhenStopped = true
+//       
+//        let urlMainPage = URL(string: "https://fc-zenit.ru")
+//        let urlRequestMainPage = URLRequest(url: urlMainPage!)
+//        
+//        mainPageWebView.load(urlRequestMainPage)
+//    }
     
 }
 
