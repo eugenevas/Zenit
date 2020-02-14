@@ -24,7 +24,6 @@ class TeamViewController: UITableViewController {
         var dSantos = Player(name: "Дуглас Сантос", position: "Защитник", country: "Бразилия 🇧🇷", image: "Дуглас Сантос")
         var yOsorio = Player(name: "Йордан Осорио", position: "Защитник", country: "Венесуэла🇻🇪", image: "Йордан Осорио")
         var vBarrios = Player(name: "Вильмар Барриос", position: "Защитник", country: "Колумбия 🇨🇴", image: "Вильмар Барриос")
-        var malcom = Player(name: "Малком", position: "Полузащитник", country: "Бразилия 🇧🇷", image: "Малком")
         var yuZhirkov = Player(name: "Юрий Жирков", position: "Полузащитник", country: "Россия🇷🇺", image: "Юрий Жирков")
         var mOzdoev = Player(name: "Магомед Оздоев", position: "Полузащитник", country: "Россия🇷🇺", image: "Магомед Оздоев")
         var lMusaev = Player(name: "Леон Мусаев", position: "Полузащитник", country: "Россия🇷🇺", image: "Леон Мусаев")
@@ -32,18 +31,17 @@ class TeamViewController: UITableViewController {
         var dKuzyaev = Player(name: "Далер Кузяев", position: "Полузащитник", country: "Россия🇷🇺", image: "Далер Кузяев")
         var aErokhin = Player(name: "Александр Ерохин", position: "Полузащитник", country: "Россия🇷🇺", image: "Александр Ерохин")
         var oShatov = Player(name: "Олег Шатов", position: "Полузащитник", country: "Россия🇷🇺", image: "Олег Шатов")
-        var mKranevitter = Player(name: "Матиас Кранневитер", position: "Полузащитник", country: "Аргенитина 🇦🇷", image: "Матиас Кранневитер")
+        var eRigoni = Player(name: "Эмилиано Ригони", position: "Полузащитник", country: "Аргенитина 🇦🇷", image: "Эмилиано Ригони")
+        var malcom = Player(name: "Малком", position: "Нападающий", country: "Бразилия 🇧🇷", image: "Малком")
         var sDriussi = Player(name: "Себастьян Дриусси", position: "Нападающий", country: "Аргенитина 🇦🇷", image: "Себастьян Дриусси")
         var sAzmoun = Player(name: "Сердар Азмун", position: "Нападающий", country: "Иран 🇮🇷", image: "Сердар Азмун")
         var aDzyuba = Player(name: "Артём Дзюба", position: "Нападающий", country: "Россия🇷🇺", image: "Артём Дзюба")
         
-        
-        return [aLunev, aVasyutin, mKerzhakov, iSmolnikov, yaRakitskiy, vKaravaev, eMammana, bIvanovic, dSantos, yOsorio, vBarrios, malcom, yuZhirkov, mOzdoev, lMusaev, aSutormin, dKuzyaev, aErokhin, oShatov, mKranevitter, sDriussi, sAzmoun, aDzyuba]
+        return [aLunev, aVasyutin, mKerzhakov, iSmolnikov, yaRakitskiy, vKaravaev, eMammana, bIvanovic, dSantos, yOsorio, vBarrios, yuZhirkov, mOzdoev, lMusaev, aSutormin, dKuzyaev, aErokhin, oShatov, eRigoni, malcom, sDriussi, sAzmoun, aDzyuba]
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
     }
     
@@ -73,15 +71,8 @@ class TeamViewController: UITableViewController {
         return 90
     }
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
+    // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowDetail" {

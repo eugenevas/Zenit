@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5817A14423E9889C00C9121D /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817A14323E9889C00C9121D /* MainPageViewController.swift */; };
-		5817A14623E988C400C9121D /* MatchesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817A14523E988C400C9121D /* MatchesViewController.swift */; };
+		5817A14623E988C400C9121D /* CoachesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817A14523E988C400C9121D /* CoachesViewController.swift */; };
 		5817A14823E988FF00C9121D /* StandingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5817A14723E988FF00C9121D /* StandingsViewController.swift */; };
 		582CFF4A2392B74C008F67CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF492392B74C008F67CE /* AppDelegate.swift */; };
 		582CFF4C2392B74C008F67CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582CFF4B2392B74C008F67CE /* SceneDelegate.swift */; };
@@ -21,6 +21,8 @@
 		58422717239D379D00DAB904 /* PlayerBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58422716239D379D00DAB904 /* PlayerBioViewController.swift */; };
 		58422719239D584400DAB904 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58422718239D584400DAB904 /* CustomTableViewCell.swift */; };
 		5842271B239D606200DAB904 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5842271A239D606200DAB904 /* PlayerModel.swift */; };
+		585D593C23F69A87006A11EB /* CoachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D593B23F69A87006A11EB /* CoachModel.swift */; };
+		585D593E23F6B6ED006A11EB /* CoachCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D593D23F6B6ED006A11EB /* CoachCustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +44,7 @@
 
 /* Begin PBXFileReference section */
 		5817A14323E9889C00C9121D /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		5817A14523E988C400C9121D /* MatchesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchesViewController.swift; sourceTree = "<group>"; };
+		5817A14523E988C400C9121D /* CoachesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesViewController.swift; sourceTree = "<group>"; };
 		5817A14723E988FF00C9121D /* StandingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingsViewController.swift; sourceTree = "<group>"; };
 		582CFF462392B74C008F67CE /* Zenit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zenit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582CFF492392B74C008F67CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		58422716239D379D00DAB904 /* PlayerBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerBioViewController.swift; sourceTree = "<group>"; };
 		58422718239D584400DAB904 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		5842271A239D606200DAB904 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		585D593B23F69A87006A11EB /* CoachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachModel.swift; sourceTree = "<group>"; };
+		585D593D23F6B6ED006A11EB /* CoachCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachCustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				5842271A239D606200DAB904 /* PlayerModel.swift */,
+				585D593B23F69A87006A11EB /* CoachModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -99,10 +104,10 @@
 		5817A14B23E9ACD800C9121D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5817A14323E9889C00C9121D /* MainPageViewController.swift */,
+				5817A14523E988C400C9121D /* CoachesViewController.swift */,
 				582CFF792392B8EF008F67CE /* TeamViewController.swift */,
 				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
-				5817A14323E9889C00C9121D /* MainPageViewController.swift */,
-				5817A14523E988C400C9121D /* MatchesViewController.swift */,
 				5817A14723E988FF00C9121D /* StandingsViewController.swift */,
 			);
 			path = Controller;
@@ -112,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				58422718239D584400DAB904 /* CustomTableViewCell.swift */,
+				585D593D23F6B6ED006A11EB /* CoachCustomTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -310,11 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5842271B239D606200DAB904 /* PlayerModel.swift in Sources */,
+				585D593E23F6B6ED006A11EB /* CoachCustomTableViewCell.swift in Sources */,
 				5817A14423E9889C00C9121D /* MainPageViewController.swift in Sources */,
 				5817A14823E988FF00C9121D /* StandingsViewController.swift in Sources */,
-				5817A14623E988C400C9121D /* MatchesViewController.swift in Sources */,
+				5817A14623E988C400C9121D /* CoachesViewController.swift in Sources */,
 				582CFF4A2392B74C008F67CE /* AppDelegate.swift in Sources */,
 				58422719239D584400DAB904 /* CustomTableViewCell.swift in Sources */,
+				585D593C23F69A87006A11EB /* CoachModel.swift in Sources */,
 				582CFF7A2392B8EF008F67CE /* TeamViewController.swift in Sources */,
 				58422717239D379D00DAB904 /* PlayerBioViewController.swift in Sources */,
 				582CFF4C2392B74C008F67CE /* SceneDelegate.swift in Sources */,
