@@ -10,8 +10,8 @@ import Foundation
 
 struct Coach {
     
-    var nameOfCoach: String?
-    var positionOfCoach: String?
-    var countryOfCoach: String?
-    var image: String?
+    var nameOfCoach: String
+    var positionOfCoach: String
+    var countryOfCoach: String
+    var imageOfCoach: String
 }

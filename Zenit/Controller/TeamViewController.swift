@@ -12,37 +12,36 @@ class TeamViewController: UITableViewController {
     
     // let players = Player.getPlayers()
     
-    var playersArray: [Player] = {
-        var aLunev = Player(name: "Андрей Лунёв", position: "Вратарь", country: "Россия🇷🇺", image: "Андрей Лунёв")
-        var aVasyutin = Player(name: "Александр Васютин", position: "Вратарь", country: "Россия🇷🇺", image: "Александр Васютин")
-        var mKerzhakov = Player(name: "Михаил Кержаков", position: "Вратарь", country: "Россия🇷🇺", image: "Михаил Кержаков")
-        var iSmolnikov = Player(name: "Игорь Смольников", position: "Защитник", country: "Россия🇷🇺", image: "Игорь Смольников")
-        var yaRakitskiy = Player(name: "Ярослав Ракицкий", position: "Защитник", country: "Украина 🇺🇦", image: "Ярослав Ракицкий")
-        var vKaravaev = Player(name: "Вячеслав Караваев", position: "Защитник", country: "Россия🇷🇺", image: "Вячеслав Караваев")
-        var eMammana = Player(name: "Эмануэль Маммана", position: "Защитник", country: "Аргенитина 🇦🇷", image: "Эмануэль Маммана")
-        var bIvanovic = Player(name: "Бранислав Иванович", position: "Защитник", country: "Сербия 🇷🇸", image: "Бранислав Иванович")
-        var dSantos = Player(name: "Дуглас Сантос", position: "Защитник", country: "Бразилия 🇧🇷", image: "Дуглас Сантос")
-        var yOsorio = Player(name: "Йордан Осорио", position: "Защитник", country: "Венесуэла🇻🇪", image: "Йордан Осорио")
-        var vBarrios = Player(name: "Вильмар Барриос", position: "Защитник", country: "Колумбия 🇨🇴", image: "Вильмар Барриос")
-        var yuZhirkov = Player(name: "Юрий Жирков", position: "Полузащитник", country: "Россия🇷🇺", image: "Юрий Жирков")
-        var mOzdoev = Player(name: "Магомед Оздоев", position: "Полузащитник", country: "Россия🇷🇺", image: "Магомед Оздоев")
-        var lMusaev = Player(name: "Леон Мусаев", position: "Полузащитник", country: "Россия🇷🇺", image: "Леон Мусаев")
-        var aSutormin = Player(name: "Алексей Сутормин", position: "Полузащитник", country: "Россия🇷🇺", image: "Алексей Сутормин")
-        var dKuzyaev = Player(name: "Далер Кузяев", position: "Полузащитник", country: "Россия🇷🇺", image: "Далер Кузяев")
-        var aErokhin = Player(name: "Александр Ерохин", position: "Полузащитник", country: "Россия🇷🇺", image: "Александр Ерохин")
-        var oShatov = Player(name: "Олег Шатов", position: "Полузащитник", country: "Россия🇷🇺", image: "Олег Шатов")
-        var eRigoni = Player(name: "Эмилиано Ригони", position: "Полузащитник", country: "Аргенитина 🇦🇷", image: "Эмилиано Ригони")
-        var malcom = Player(name: "Малком", position: "Нападающий", country: "Бразилия 🇧🇷", image: "Малком")
-        var sDriussi = Player(name: "Себастьян Дриусси", position: "Нападающий", country: "Аргенитина 🇦🇷", image: "Себастьян Дриусси")
-        var sAzmoun = Player(name: "Сердар Азмун", position: "Нападающий", country: "Иран 🇮🇷", image: "Сердар Азмун")
-        var aDzyuba = Player(name: "Артём Дзюба", position: "Нападающий", country: "Россия🇷🇺", image: "Артём Дзюба")
+    let playersArray: [Player] = {
+        let aLunev = Player(name: "Андрей Лунёв", position: "Вратарь", country: "Россия🇷🇺", image: "Андрей Лунёв")
+        let aVasyutin = Player(name: "Александр Васютин", position: "Вратарь", country: "Россия🇷🇺", image: "Александр Васютин")
+        let mKerzhakov = Player(name: "Михаил Кержаков", position: "Вратарь", country: "Россия🇷🇺", image: "Михаил Кержаков")
+        let iSmolnikov = Player(name: "Игорь Смольников", position: "Защитник", country: "Россия🇷🇺", image: "Игорь Смольников")
+        let yaRakitskiy = Player(name: "Ярослав Ракицкий", position: "Защитник", country: "Украина🇺🇦", image: "Ярослав Ракицкий")
+        let vKaravaev = Player(name: "Вячеслав Караваев", position: "Защитник", country: "Россия🇷🇺", image: "Вячеслав Караваев")
+        let eMammana = Player(name: "Эмануэль Маммана", position: "Защитник", country: "Аргенитина🇦🇷", image: "Эмануэль Маммана")
+        let bIvanovic = Player(name: "Бранислав Иванович", position: "Защитник", country: "Сербия🇷🇸", image: "Бранислав Иванович")
+        let dSantos = Player(name: "Дуглас Сантос", position: "Защитник", country: "Бразилия🇧🇷", image: "Дуглас Сантос")
+        let yOsorio = Player(name: "Йордан Осорио", position: "Защитник", country: "Венесуэла🇻🇪", image: "Йордан Осорио")
+        let vBarrios = Player(name: "Вильмар Барриос", position: "Защитник", country: "Колумбия 🇨🇴", image: "Вильмар Барриос")
+        let yuZhirkov = Player(name: "Юрий Жирков", position: "Полузащитник", country: "Россия🇷🇺", image: "Юрий Жирков")
+        let mOzdoev = Player(name: "Магомед Оздоев", position: "Полузащитник", country: "Россия🇷🇺", image: "Магомед Оздоев")
+        let lMusaev = Player(name: "Леон Мусаев", position: "Полузащитник", country: "Россия🇷🇺", image: "Леон Мусаев")
+        let aSutormin = Player(name: "Алексей Сутормин", position: "Полузащитник", country: "Россия🇷🇺", image: "Алексей Сутормин")
+        let dKuzyaev = Player(name: "Далер Кузяев", position: "Полузащитник", country: "Россия🇷🇺", image: "Далер Кузяев")
+        let aErokhin = Player(name: "Александр Ерохин", position: "Полузащитник", country: "Россия🇷🇺", image: "Александр Ерохин")
+        let oShatov = Player(name: "Олег Шатов", position: "Полузащитник", country: "Россия🇷🇺", image: "Олег Шатов")
+        let eRigoni = Player(name: "Эмилиано Ригони", position: "Полузащитник", country: "Аргенитина 🇦🇷", image: "Эмилиано Ригони")
+        let malcom = Player(name: "Малком", position: "Нападающий", country: "Бразилия🇧🇷", image: "Малком")
+        let sDriussi = Player(name: "Себастьян Дриусси", position: "Нападающий", country: "Аргенитина🇦🇷", image: "Себастьян Дриусси")
+        let sAzmoun = Player(name: "Сердар Азмун", position: "Нападающий", country: "Иран🇮🇷", image: "Сердар Азмун")
+        let aDzyuba = Player(name: "Артём Дзюба", position: "Нападающий", country: "Россия🇷🇺", image: "Артём Дзюба")
         
         return [aLunev, aVasyutin, mKerzhakov, iSmolnikov, yaRakitskiy, vKaravaev, eMammana, bIvanovic, dSantos, yOsorio, vBarrios, yuZhirkov, mOzdoev, lMusaev, aSutormin, dKuzyaev, aErokhin, oShatov, eRigoni, malcom, sDriussi, sAzmoun, aDzyuba]
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
     
     // MARK: - Table view data source
@@ -82,4 +81,5 @@ class TeamViewController: UITableViewController {
             }
         }
     }
+
 }
