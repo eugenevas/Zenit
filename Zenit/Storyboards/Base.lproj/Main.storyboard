@@ -77,6 +77,7 @@
                                     <outlet property="coachImage" destination="I0m-Bd-1rA" id="iEp-q9-MqD"/>
                                     <outlet property="coachName" destination="RiZ-PA-vAp" id="sPc-oP-zlr"/>
                                     <outlet property="coachPosition" destination="5bQ-ku-Qc4" id="Cee-Jh-TqA"/>
+                                    <segue destination="UBv-07-6Uw" kind="show" identifier="ShowCoachDetail" id="iC7-MH-mzf"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -85,13 +86,13 @@
                             <outlet property="delegate" destination="3Qo-2r-3mG" id="PW1-6A-Ga7"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Тренерский штаб" image="matches" id="5jW-XO-o3Q"/>
+                    <tabBarItem key="tabBarItem" title="Тренерский штаб" image="team" id="5jW-XO-o3Q"/>
                     <navigationItem key="navigationItem" title="Тренерский штаб" id="ghf-zT-nQx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJO-qX-B8f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1682.608695652174" y="1731.6964285714284"/>
+            <point key="canvasLocation" x="1670" y="1732"/>
         </scene>
         <!--Главная-->
         <scene sceneID="EQM-U2-L5M">
@@ -148,6 +149,7 @@
                         <segue destination="OdG-gt-TSE" kind="relationship" relationship="viewControllers" id="qw0-5M-Je2"/>
                         <segue destination="sBp-bE-941" kind="relationship" relationship="viewControllers" id="9ss-Qi-QgI"/>
                         <segue destination="rg4-ry-IXP" kind="relationship" relationship="viewControllers" id="zQ7-qj-V4N"/>
+                        <segue destination="ERP-dW-dVr" kind="relationship" relationship="viewControllers" id="vZp-HW-Caw"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSn-aF-0jY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,7 +228,7 @@
                                     <outlet property="imageOfPlayer" destination="e1e-DX-qdV" id="KrW-eI-DdZ"/>
                                     <outlet property="nameLabel" destination="kJA-oO-OPR" id="AhE-Qj-r36"/>
                                     <outlet property="positionLabel" destination="M3C-rD-6ed" id="cVc-Y5-BxQ"/>
-                                    <segue destination="Cv4-gX-06Y" kind="show" identifier="ShowDetail" id="vm8-SA-GbN"/>
+                                    <segue destination="Cv4-gX-06Y" kind="show" identifier="ShowDetail" id="rqa-N5-LON"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -235,7 +237,7 @@
                             <outlet property="delegate" destination="hci-Kq-KDa" id="Yyj-rP-eJH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Игроки" image="team" id="fWT-Mg-deL"/>
+                    <tabBarItem key="tabBarItem" title="Игроки" image="matches" id="fWT-Mg-deL"/>
                     <navigationItem key="navigationItem" title="Игроки Зенита" id="d5M-Cq-g4S"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT1-zB-cOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -246,7 +248,7 @@
         <scene sceneID="IkS-Ku-VtY">
             <objects>
                 <navigationController id="sBp-bE-941" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Игроки Зенита" image="team" id="MHt-1h-iFb"/>
+                    <tabBarItem key="tabBarItem" title="Игроки Зенита" image="matches" id="MHt-1h-iFb"/>
                     <navigationItem key="navigationItem" id="ATT-RD-GLx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2aY-1D-kEE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -269,13 +271,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0S-rA-aZ5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="287"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="302"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JIR-YR-nBg"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-KE-gCi">
-                                <rect key="frame" x="20" y="422" width="374" height="36"/>
+                                <rect key="frame" x="20" y="420" width="374" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="dH1-JF-I3r"/>
                                 </constraints>
@@ -284,10 +286,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-wa-M1l">
-                                <rect key="frame" x="20" y="466" width="374" height="335"/>
+                                <rect key="frame" x="20" y="466" width="375" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="374" id="N2E-4h-SCb"/>
+                                    <constraint firstAttribute="width" constant="375" id="N2E-4h-SCb"/>
                                     <constraint firstAttribute="height" constant="335" id="NDV-TF-ffc"/>
                                 </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -299,12 +301,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="z7k-KE-gCi" firstAttribute="centerX" secondItem="a0S-rA-aZ5" secondAttribute="centerX" id="3kM-U9-75M"/>
+                            <constraint firstItem="z7k-KE-gCi" firstAttribute="top" secondItem="a0S-rA-aZ5" secondAttribute="bottom" constant="30" id="9Wr-m6-48P"/>
                             <constraint firstItem="a0S-rA-aZ5" firstAttribute="leading" secondItem="dOX-U5-8sC" secondAttribute="leading" id="9s9-ab-vSW"/>
-                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="z7k-KE-gCi" secondAttribute="bottom" constant="8" id="AOk-Fy-jTr"/>
+                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="z7k-KE-gCi" secondAttribute="bottom" constant="10" id="AOk-Fy-jTr"/>
                             <constraint firstItem="z7k-KE-gCi" firstAttribute="leading" secondItem="uOz-wa-M1l" secondAttribute="leading" id="FNY-eT-s8L"/>
-                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="z7k-KE-gCi" secondAttribute="bottom" constant="8" id="JdJ-cK-mzk"/>
                             <constraint firstItem="a0S-rA-aZ5" firstAttribute="trailing" secondItem="dOX-U5-8sC" secondAttribute="trailing" id="Sdh-k3-hod"/>
-                            <constraint firstItem="z7k-KE-gCi" firstAttribute="top" secondItem="a0S-rA-aZ5" secondAttribute="bottom" constant="47" id="d1L-9x-mga"/>
                             <constraint firstItem="dOX-U5-8sC" firstAttribute="bottom" secondItem="uOz-wa-M1l" secondAttribute="bottom" constant="12" id="r4E-cD-qKm"/>
                             <constraint firstItem="a0S-rA-aZ5" firstAttribute="top" secondItem="dOX-U5-8sC" secondAttribute="top" id="uTU-ph-GYb"/>
                         </constraints>
@@ -314,18 +315,75 @@
                     <connections>
                         <outlet property="bio" destination="uOz-wa-M1l" id="eWQ-JC-5Iz"/>
                         <outlet property="image" destination="a0S-rA-aZ5" id="tz2-gW-rQx"/>
-                        <outlet property="name" destination="z7k-KE-gCi" id="tTz-jY-go1"/>
+                        <outlet property="name" destination="z7k-KE-gCi" id="7Mh-YX-Bso"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2e-K7-ob8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="783" y="2460"/>
         </scene>
+        <!--О тренере-->
+        <scene sceneID="2AO-Da-vD3">
+            <objects>
+                <viewController id="UBv-07-6Uw" customClass="CoachBioViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wrn-H5-8WP">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0b0-hk-963">
+                                <rect key="frame" x="0.0" y="88" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="5At-qS-FKf"/>
+                                    <constraint firstAttribute="width" constant="414" id="Dg1-bF-8la"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AiD-PW-K6U">
+                                <rect key="frame" x="20" y="478" width="374" height="335"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lCT-Yq-qdd">
+                                <rect key="frame" x="20" y="418" width="374" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="SRK-Ss-hzz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="AiD-PW-K6U" firstAttribute="bottom" secondItem="I3O-uv-YMh" secondAttribute="bottom" id="2Nm-oh-eIg"/>
+                            <constraint firstItem="lCT-Yq-qdd" firstAttribute="top" secondItem="0b0-hk-963" secondAttribute="bottom" constant="30" id="Kew-Np-ymF"/>
+                            <constraint firstItem="AiD-PW-K6U" firstAttribute="top" secondItem="lCT-Yq-qdd" secondAttribute="bottom" constant="24" id="OzV-8R-j1P"/>
+                            <constraint firstItem="AiD-PW-K6U" firstAttribute="trailing" secondItem="lCT-Yq-qdd" secondAttribute="trailing" id="R63-kZ-6yv"/>
+                            <constraint firstItem="0b0-hk-963" firstAttribute="top" secondItem="I3O-uv-YMh" secondAttribute="top" id="SmB-cx-ocJ"/>
+                            <constraint firstItem="0b0-hk-963" firstAttribute="centerX" secondItem="I3O-uv-YMh" secondAttribute="centerX" id="TNS-04-hAC"/>
+                            <constraint firstItem="0b0-hk-963" firstAttribute="centerX" secondItem="AiD-PW-K6U" secondAttribute="centerX" id="YKb-iQ-I19"/>
+                            <constraint firstItem="0b0-hk-963" firstAttribute="centerX" secondItem="lCT-Yq-qdd" secondAttribute="centerX" id="eyJ-ah-2yB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="I3O-uv-YMh"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="О тренере" id="aaA-22-DAO"/>
+                    <connections>
+                        <outlet property="bio" destination="AiD-PW-K6U" id="wRQ-Co-so1"/>
+                        <outlet property="image" destination="0b0-hk-963" id="FXh-Dk-urQ"/>
+                        <outlet property="name" destination="lCT-Yq-qdd" id="yHo-Of-B0m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Pu-fT-w4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1669.5652173913045" y="2459.5982142857142"/>
+        </scene>
         <!--Тренерский штаб-->
         <scene sceneID="5Ip-dJ-VM9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rg4-ry-IXP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Тренерский штаб" image="matches" id="E7x-ws-UDl"/>
+                    <tabBarItem key="tabBarItem" title="Тренерский штаб" image="team" id="E7x-ws-UDl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e61-Gh-5mO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -340,10 +398,52 @@
             </objects>
             <point key="canvasLocation" x="1670" y="1000"/>
         </scene>
+        <!--Таблица-->
+        <scene sceneID="vyM-09-zMk">
+            <objects>
+                <viewController id="ERP-dW-dVr" customClass="StandingsViewController" customModule="Zenit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Tma-iV-eGV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NPg-ue-qPf">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="u9p-nK-NGz">
+                                <rect key="frame" x="197" y="418.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u9p-nK-NGz" firstAttribute="centerX" secondItem="NPg-ue-qPf" secondAttribute="centerX" id="JCW-HV-tJ0"/>
+                            <constraint firstItem="NPg-ue-qPf" firstAttribute="trailing" secondItem="Nd4-Og-S0s" secondAttribute="trailing" id="TJW-7X-dcU"/>
+                            <constraint firstItem="NPg-ue-qPf" firstAttribute="leading" secondItem="Nd4-Og-S0s" secondAttribute="leading" id="Yv3-rr-dNh"/>
+                            <constraint firstItem="NPg-ue-qPf" firstAttribute="bottom" secondItem="Nd4-Og-S0s" secondAttribute="bottom" id="eVx-ez-9js"/>
+                            <constraint firstItem="NPg-ue-qPf" firstAttribute="top" secondItem="Nd4-Og-S0s" secondAttribute="top" id="hdz-E2-8ec"/>
+                            <constraint firstItem="u9p-nK-NGz" firstAttribute="centerY" secondItem="NPg-ue-qPf" secondAttribute="centerY" id="ntK-JU-US3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nd4-Og-S0s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Таблица" image="table" id="VSu-Df-tkv"/>
+                    <connections>
+                        <outlet property="standingsActivityIndicator" destination="u9p-nK-NGz" id="irS-6H-Ido"/>
+                        <outlet property="standingsWebView" destination="NPg-ue-qPf" id="yPy-tP-oAt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dR4-G6-EBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2647.826086956522" y="999.77678571428567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="main" width="24" height="24"/>
         <image name="matches" width="24" height="24"/>
+        <image name="table" width="22" height="22"/>
         <image name="team" width="30" height="19"/>
     </resources>
 </document>

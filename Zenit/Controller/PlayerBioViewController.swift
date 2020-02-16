@@ -15,14 +15,34 @@ class PlayerBioViewController: UIViewController {
     @IBOutlet weak var bio: UITextView!
     
     
-    var nameOfPlayer = "Name"
+    var namePlayer = "Just a player name"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        image.image = UIImage(named: nameOfPlayer)
-        name.text = nameOfPlayer
+        image.image = UIImage(named: namePlayer)
+        name.text = namePlayer
         bio.text = "Here will be a correct text soon"
     }
     
 }
+
+
+//class CoachBioViewController: UIViewController {
+//
+//    @IBOutlet weak var image: UIImageView!
+//    @IBOutlet weak var name: UILabel!
+//    @IBOutlet weak var bio: UITextView!
+//
+//
+//    var nameCoach = "Just a name"
+//
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+//
+//        image.image = UIImage(named: nameCoach)
+//        name.text = nameCoach
+//        bio.text = "Here will be text"
+//
+//    }
+//}

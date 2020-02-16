@@ -23,6 +23,7 @@
 		585D593C23F69A87006A11EB /* CoachModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585D593B23F69A87006A11EB /* CoachModel.swift */; };
 		58EA280523F6FCA2001762D7 /* CoachViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA280423F6FCA2001762D7 /* CoachViewController.swift */; };
 		58EA280723F7019C001762D7 /* CoachTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA280623F7019C001762D7 /* CoachTableViewCell.swift */; };
+		58EA280923F9C4AD001762D7 /* CoachBioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA280823F9C4AD001762D7 /* CoachBioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		585D593B23F69A87006A11EB /* CoachModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachModel.swift; sourceTree = "<group>"; };
 		58EA280423F6FCA2001762D7 /* CoachViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachViewController.swift; sourceTree = "<group>"; };
 		58EA280623F7019C001762D7 /* CoachTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachTableViewCell.swift; sourceTree = "<group>"; };
+		58EA280823F9C4AD001762D7 /* CoachBioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachBioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,11 +106,12 @@
 		5817A14B23E9ACD800C9121D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				5817A14723E988FF00C9121D /* StandingsViewController.swift */,
 				5817A14323E9889C00C9121D /* MainPageViewController.swift */,
-				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
 				582CFF792392B8EF008F67CE /* TeamViewController.swift */,
+				58422716239D379D00DAB904 /* PlayerBioViewController.swift */,
 				58EA280423F6FCA2001762D7 /* CoachViewController.swift */,
+				58EA280823F9C4AD001762D7 /* CoachBioViewController.swift */,
+				5817A14723E988FF00C9121D /* StandingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			files = (
 				5842271B239D606200DAB904 /* PlayerModel.swift in Sources */,
 				5817A14423E9889C00C9121D /* MainPageViewController.swift in Sources */,
+				58EA280923F9C4AD001762D7 /* CoachBioViewController.swift in Sources */,
 				5817A14823E988FF00C9121D /* StandingsViewController.swift in Sources */,
 				582CFF4A2392B74C008F67CE /* AppDelegate.swift in Sources */,
 				58422719239D584400DAB904 /* CustomTableViewCell.swift in Sources */,

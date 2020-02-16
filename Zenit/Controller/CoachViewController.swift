@@ -21,11 +21,14 @@ class CoachViewController: UITableViewController {
         return [sSemak, aNizelik, iSimutenkov, aTimoshchuk, deOliveira]
     }()
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
     
+    // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return coachesArray.count
     }
-    
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let coachCell = tableView.dequeueReusableCell(withIdentifier: "CoachCell", for: indexPath) as! CoachTableViewCell
@@ -39,9 +42,20 @@ class CoachViewController: UITableViewController {
         
         return coachCell
     }
-    
-    
+
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 90
+    }
+    
+     // MARK: - Navigation
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ShowCoachDetail" {
+            if let coachIndexPath = self.tableView.indexPathForSelectedRow {
+                let coachBioViewContoller = segue.destination as! CoachBioViewController
+                
+                coachBioViewContoller.nameCoach = coachesArray[coachIndexPath.row].nameOfCoach
+            }
+        }
     }
 }

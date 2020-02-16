@@ -10,11 +10,9 @@ import UIKit
 
 class CoachTableViewCell: UITableViewCell {
 
-    
     @IBOutlet weak var coachImage: UIImageView!
     @IBOutlet weak var coachName: UILabel!
     @IBOutlet weak var coachPosition: UILabel!
     @IBOutlet weak var coachCountry: UILabel!
     
-
 }

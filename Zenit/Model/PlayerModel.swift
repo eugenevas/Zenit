@@ -10,9 +10,8 @@ import Foundation
 
 struct Player {
     
-    var name: String
+    var nameOfPlayer: String
     var position: String
     var country: String
     var image: String
-        
 }
