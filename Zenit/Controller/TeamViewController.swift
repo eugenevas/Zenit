@@ -10,8 +10,6 @@ import UIKit
 
 class TeamViewController: UITableViewController {
     
-    // let players = Player.getPlayers()
-    
     let playersArray: [Player] = {
         let aLunev = Player(nameOfPlayer: "Андрей Лунёв", position: "Вратарь", country: "Россия🇷🇺", image: "Андрей Лунёв")
         let aVasyutin = Player(nameOfPlayer: "Александр Васютин", position: "Вратарь", country: "Россия🇷🇺", image: "Александр Васютин")
