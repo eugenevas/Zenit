@@ -224,11 +224,11 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="countryLabel" destination="Phi-34-D4z" id="iuY-9J-Jbb"/>
-                                    <outlet property="imageOfPlayer" destination="e1e-DX-qdV" id="KrW-eI-DdZ"/>
-                                    <outlet property="nameLabel" destination="kJA-oO-OPR" id="AhE-Qj-r36"/>
-                                    <outlet property="positionLabel" destination="M3C-rD-6ed" id="cVc-Y5-BxQ"/>
-                                    <segue destination="Cv4-gX-06Y" kind="show" identifier="ShowDetail" id="rqa-N5-LON"/>
+                                    <outlet property="playerCountry" destination="Phi-34-D4z" id="Zai-Mc-adC"/>
+                                    <outlet property="playerImage" destination="e1e-DX-qdV" id="1bC-l0-ylH"/>
+                                    <outlet property="playerName" destination="kJA-oO-OPR" id="jea-HY-8Rm"/>
+                                    <outlet property="playerPosition" destination="M3C-rD-6ed" id="eU8-3B-MpG"/>
+                                    <segue destination="Cv4-gX-06Y" kind="show" identifier="ShowPlayerDetail" id="rqa-N5-LON"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -271,22 +271,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a0S-rA-aZ5">
-                                <rect key="frame" x="0.0" y="88" width="414" height="302"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="293"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="JIR-YR-nBg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z7k-KE-gCi">
-                                <rect key="frame" x="20" y="420" width="374" height="36"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="374" id="dH1-JF-I3r"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uOz-wa-M1l">
-                                <rect key="frame" x="20" y="466" width="375" height="335"/>
+                                <rect key="frame" x="19.5" y="466" width="375" height="335"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="N2E-4h-SCb"/>
@@ -297,25 +288,31 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V6H-Z8-uMW">
+                                <rect key="frame" x="177.5" y="417" width="59.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="z7k-KE-gCi" firstAttribute="centerX" secondItem="a0S-rA-aZ5" secondAttribute="centerX" id="3kM-U9-75M"/>
-                            <constraint firstItem="z7k-KE-gCi" firstAttribute="top" secondItem="a0S-rA-aZ5" secondAttribute="bottom" constant="30" id="9Wr-m6-48P"/>
                             <constraint firstItem="a0S-rA-aZ5" firstAttribute="leading" secondItem="dOX-U5-8sC" secondAttribute="leading" id="9s9-ab-vSW"/>
-                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="z7k-KE-gCi" secondAttribute="bottom" constant="10" id="AOk-Fy-jTr"/>
-                            <constraint firstItem="z7k-KE-gCi" firstAttribute="leading" secondItem="uOz-wa-M1l" secondAttribute="leading" id="FNY-eT-s8L"/>
+                            <constraint firstItem="V6H-Z8-uMW" firstAttribute="top" secondItem="a0S-rA-aZ5" secondAttribute="bottom" constant="36" id="MH2-OE-s83"/>
+                            <constraint firstItem="uOz-wa-M1l" firstAttribute="centerX" secondItem="V6H-Z8-uMW" secondAttribute="centerX" id="PfF-v4-nnh"/>
                             <constraint firstItem="a0S-rA-aZ5" firstAttribute="trailing" secondItem="dOX-U5-8sC" secondAttribute="trailing" id="Sdh-k3-hod"/>
                             <constraint firstItem="dOX-U5-8sC" firstAttribute="bottom" secondItem="uOz-wa-M1l" secondAttribute="bottom" constant="12" id="r4E-cD-qKm"/>
                             <constraint firstItem="a0S-rA-aZ5" firstAttribute="top" secondItem="dOX-U5-8sC" secondAttribute="top" id="uTU-ph-GYb"/>
+                            <constraint firstItem="uOz-wa-M1l" firstAttribute="centerX" secondItem="a0S-rA-aZ5" secondAttribute="centerX" id="yaZ-2U-oJd"/>
+                            <constraint firstItem="uOz-wa-M1l" firstAttribute="top" secondItem="V6H-Z8-uMW" secondAttribute="bottom" constant="19" id="zMa-Om-ftZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dOX-U5-8sC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Об игроке" id="adx-RE-Ase"/>
                     <connections>
-                        <outlet property="bio" destination="uOz-wa-M1l" id="73B-RE-AMX"/>
-                        <outlet property="image" destination="a0S-rA-aZ5" id="OyY-i8-k6O"/>
-                        <outlet property="nameLabel" destination="z7k-KE-gCi" id="pDf-po-IcX"/>
+                        <outlet property="bioPlayer" destination="uOz-wa-M1l" id="4BL-IJ-NkB"/>
+                        <outlet property="imagePlayer" destination="a0S-rA-aZ5" id="NZR-ZS-QyG"/>
+                        <outlet property="namePlayerLabel" destination="V6H-Z8-uMW" id="O9d-c6-k39"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2e-K7-ob8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

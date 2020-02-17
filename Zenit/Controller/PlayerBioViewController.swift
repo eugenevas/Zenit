@@ -10,19 +10,19 @@ import UIKit
 
 class PlayerBioViewController: UIViewController {
     
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var bio: UITextView!
+    @IBOutlet weak var imagePlayer: UIImageView!
+    @IBOutlet weak var namePlayerLabel: UILabel!
+    @IBOutlet weak var bioPlayer: UITextView!
     
     
-    var namePlayer = "Just a player name"
+    var namePlayer = "Player name"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        image.image = UIImage(named: namePlayer)
-        nameLabel.text = namePlayer
-        bio.text = "Here will be a correct text soon"
+        imagePlayer.image = UIImage(named: namePlayer)
+        namePlayerLabel.text = namePlayer
+        bioPlayer.text = "Here will be a correct text soon"
     }
     
 }

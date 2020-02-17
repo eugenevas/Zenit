@@ -10,9 +10,9 @@ import UIKit
 
 class CustomTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var imageOfPlayer: UIImageView!
-    @IBOutlet weak var nameLabel: UILabel!
-    @IBOutlet weak var positionLabel: UILabel!
-    @IBOutlet weak var countryLabel: UILabel!
-
+    @IBOutlet weak var playerImage: UIImageView!
+    @IBOutlet weak var playerName: UILabel!
+    @IBOutlet weak var playerPosition: UILabel!
+    @IBOutlet weak var playerCountry: UILabel!
+    
 }

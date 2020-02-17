@@ -11,7 +11,7 @@ import Foundation
 struct Player {
     
     var nameOfPlayer: String
-    var position: String
-    var country: String
-    var image: String
+    var positionOfPlayer: String
+    var countryOfPlayer: String
+    var imageOfPlayer: String
 }
