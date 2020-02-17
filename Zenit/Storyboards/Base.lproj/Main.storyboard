@@ -313,9 +313,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="Об игроке" id="adx-RE-Ase"/>
                     <connections>
-                        <outlet property="bio" destination="uOz-wa-M1l" id="eWQ-JC-5Iz"/>
-                        <outlet property="image" destination="a0S-rA-aZ5" id="tz2-gW-rQx"/>
-                        <outlet property="name" destination="z7k-KE-gCi" id="7Mh-YX-Bso"/>
+                        <outlet property="bio" destination="uOz-wa-M1l" id="73B-RE-AMX"/>
+                        <outlet property="image" destination="a0S-rA-aZ5" id="OyY-i8-k6O"/>
+                        <outlet property="nameLabel" destination="z7k-KE-gCi" id="pDf-po-IcX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e2e-K7-ob8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -370,9 +370,9 @@
                     </view>
                     <navigationItem key="navigationItem" title="О тренере" id="aaA-22-DAO"/>
                     <connections>
-                        <outlet property="bio" destination="AiD-PW-K6U" id="wRQ-Co-so1"/>
-                        <outlet property="image" destination="0b0-hk-963" id="FXh-Dk-urQ"/>
-                        <outlet property="name" destination="lCT-Yq-qdd" id="yHo-Of-B0m"/>
+                        <outlet property="bioCoach" destination="AiD-PW-K6U" id="eJp-gc-SL5"/>
+                        <outlet property="imageCoach" destination="0b0-hk-963" id="xoi-lC-VOJ"/>
+                        <outlet property="nameCoachLabel" destination="lCT-Yq-qdd" id="TUA-Ev-EJx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Pu-fT-w4D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

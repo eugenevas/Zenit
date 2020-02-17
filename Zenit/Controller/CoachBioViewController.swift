@@ -10,9 +10,9 @@ import UIKit
 
 class CoachBioViewController: UIViewController {
 
-    @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var bio: UITextView!
+    @IBOutlet weak var imageCoach: UIImageView!
+    @IBOutlet weak var nameCoachLabel: UILabel!
+    @IBOutlet weak var bioCoach: UITextView!
     
     
     var nameCoach = "Just a name"
@@ -20,9 +20,9 @@ class CoachBioViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        image.image = UIImage(named: nameCoach)
-        name.text = nameCoach
-        bio.text = "Here will be text"
+        imageCoach.image = UIImage(named: nameCoach)
+        nameCoachLabel.text = nameCoach
+        bioCoach.text = "Here will be text"
         
     }
 }

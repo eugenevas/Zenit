@@ -11,7 +11,7 @@ import UIKit
 class PlayerBioViewController: UIViewController {
     
     @IBOutlet weak var image: UIImageView!
-    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bio: UITextView!
     
     
@@ -21,7 +21,7 @@ class PlayerBioViewController: UIViewController {
         super.viewDidLoad()
         
         image.image = UIImage(named: namePlayer)
-        name.text = namePlayer
+        nameLabel.text = namePlayer
         bio.text = "Here will be a correct text soon"
     }
     
