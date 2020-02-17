@@ -53,7 +53,6 @@ class CoachViewController: UITableViewController {
         if segue.identifier == "ShowCoachDetail" {
             
             if let coachIndexPath = self.tableView.indexPathForSelectedRow {
-                
                 let coachBioViewContoller = segue.destination as! CoachBioViewController
                 
                 coachBioViewContoller.nameCoach = coachesArray[coachIndexPath.row].nameOfCoach

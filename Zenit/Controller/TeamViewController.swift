@@ -60,7 +60,7 @@ class TeamViewController: UITableViewController {
         playerCell.playerImage.layer.cornerRadius = playerCell.playerImage.frame.size.height / 3
         playerCell.playerImage.clipsToBounds = true
         
-        // возвращаем cell, т.к. cell - объект класса UITableViewCell
+        // возвращаем playerCell, т.к. playerСell - объект класса UITableViewCell
         return playerCell
     }
     
@@ -68,14 +68,12 @@ class TeamViewController: UITableViewController {
         return 90
     }
     
-    
     // MARK: - Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "ShowPlayerDetail" {
            
             if let playerIndexPath = self.tableView.indexPathForSelectedRow {
-             
                 let playerBioViewController = segue.destination as! PlayerBioViewController
                 
                 playerBioViewController.namePlayer = playersArray[playerIndexPath.row].nameOfPlayer
