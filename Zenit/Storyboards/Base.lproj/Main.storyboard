@@ -86,7 +86,7 @@
                             <outlet property="delegate" destination="3Qo-2r-3mG" id="PW1-6A-Ga7"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Тренерский штаб" image="team" id="5jW-XO-o3Q"/>
+                    <tabBarItem key="tabBarItem" title="Тренеры" image="team" id="5jW-XO-o3Q"/>
                     <navigationItem key="navigationItem" title="Тренерский штаб" id="ghf-zT-nQx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -244,11 +244,11 @@
             </objects>
             <point key="canvasLocation" x="783" y="1732"/>
         </scene>
-        <!--Игроки Зенита-->
+        <!--Игроки-->
         <scene sceneID="IkS-Ku-VtY">
             <objects>
                 <navigationController id="sBp-bE-941" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Игроки Зенита" image="matches" id="MHt-1h-iFb"/>
+                    <tabBarItem key="tabBarItem" title="Игроки" image="matches" id="MHt-1h-iFb"/>
                     <navigationItem key="navigationItem" id="ATT-RD-GLx"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2aY-1D-kEE">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -376,11 +376,11 @@
             </objects>
             <point key="canvasLocation" x="1669.5652173913045" y="2459.5982142857142"/>
         </scene>
-        <!--Тренерский штаб-->
+        <!--Тренеры-->
         <scene sceneID="5Ip-dJ-VM9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rg4-ry-IXP" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Тренерский штаб" image="team" id="E7x-ws-UDl"/>
+                    <tabBarItem key="tabBarItem" title="Тренеры" image="team" id="E7x-ws-UDl"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="e61-Gh-5mO">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
