@@ -1,4 +1,4 @@
 # Zenit
-App with Zenit players and coaching staff list 
+App with Zenit players and coaching staff list. 
 
-Using storyboard for layout
+Using storyboard for layout.
